@@ -25,7 +25,7 @@ services:
   foo:
     image: foo:latest
     networks:
-      - proxy-tier#
+      - proxy-tier
     environment:
       - VIRTUAL_HOST=foo.example.com
       - VIRTUAL_PORT=80
