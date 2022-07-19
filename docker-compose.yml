@@ -24,7 +24,7 @@ services:
     container_name: docker-gen
     restart: unless-stopped
     volumes_from:
-      - nginx
+      - nginx-proxy
     volumes:
       - /var/run/docker.sock:/tmp/docker.sock:ro
       - ./nginx.tmpl:/etc/docker-gen/templates/nginx.tmpl:ro
@@ -37,7 +37,7 @@ services:
     container_name: acme-companion
     restart: unless-stopped
     volumes_from:
-      - nginx
+      - nginx-proxy
     volumes:
       - acme:/etc/acme.sh
       - certs:/etc/nginx/certs:ro
