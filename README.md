@@ -1,3 +1,6 @@
+Ready to use docker-compose configuration to set up [jwilder/docker-gen](https://jwilder/docker-gen) with [jrcs/letsencrypt-nginx-proxy-companion](https://github.com/jrcs/letsencrypt-nginx-proxy-companion).
+
+
 ## Setup on host
 
 Configure network:
