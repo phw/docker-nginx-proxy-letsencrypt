@@ -2,6 +2,10 @@
 
 Ready to use docker-compose configuration to set up [nginx-proxy/docker-gen](https://github.com/nginx-proxy/docker-gen) with [nginx-proxy/acme-companion](https://github.com/nginx-proxy/acme-companion).
 
+Essentially this is the acme-companion [three container setup](https://github.com/nginx-proxy/acme-companion/wiki/Advanced-usage) ready to use with docker-compose.
+
+*Please note: I maintain this only for my own use. I have this setup running on multiple servers,and it fits my need. It might or might not fit yours, but feel free to use and change it.*
+
 
 ## Setup on host
 
@@ -43,3 +47,12 @@ networks:
     external:
       name: nginx-proxy
 ```
+
+
+## License
+
+Copyright © 2019-2022 Philipp Wolfer <ph.wolfer@gmail.com>
+
+This work is free. You can redistribute it and/or modify it under the
+terms of the Do What The Fuck You Want To Public License, Version 2,
+as published by Sam Hocevar. See the [COPYING](./COPYING) file for more details.
