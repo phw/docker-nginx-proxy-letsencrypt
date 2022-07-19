@@ -42,7 +42,7 @@ services:
       - nginx-proxy
     volumes:
       - acme:/etc/acme.sh
-      - certs:/etc/nginx/certs:ro
+      - certs:/etc/nginx/certs:rw
       - /var/run/docker.sock:/var/run/docker.sock:ro
     networks:
       - proxy-tier
