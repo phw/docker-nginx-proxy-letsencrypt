@@ -6,7 +6,7 @@ services:
   nginx-proxy:
     image: nginx:alpine
     container_name: nginx-proxy
-    restart: unless-stopped
+    restart: always
     ports:
       - "80:80"
       - "443:443"
@@ -24,7 +24,7 @@ services:
   docker-gen:
     image: nginxproxy/docker-gen
     container_name: docker-gen
-    restart: unless-stopped
+    restart: always
     volumes_from:
       - nginx-proxy
     volumes:
@@ -39,7 +39,7 @@ services:
   acme-companion:
     image: nginxproxy/acme-companion
     container_name: acme-companion
-    restart: unless-stopped
+    restart: always
     volumes_from:
       - nginx-proxy
     volumes:
