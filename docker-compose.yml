@@ -1,4 +1,4 @@
-version: '2'
+version: '3.8'
 
 services:
 
@@ -51,8 +51,8 @@ services:
 
 networks:
   proxy-tier:
-    external:
-      name: nginx-proxy
+    name: nginx-proxy
+    external: true
 
 volumes:
   conf:

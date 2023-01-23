@@ -15,7 +15,7 @@ Configure network:
 
 Start nginx proxy services:
 
-    docker-compose -f docker-compose.yml up -d
+    docker compose -f docker-compose.yml up -d
 
 
 ## Configure your project to be exposed via nginx proxy
