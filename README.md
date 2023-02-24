@@ -1,5 +1,7 @@
 # docker-nginx-proxy-letsencrypt
 
+**This project was moved to https://git.sr.ht/~phw/docker-nginx-proxy-letsencrypt**
+
 Ready to use docker-compose configuration to set up [nginx-proxy/docker-gen](https://github.com/nginx-proxy/docker-gen) with [nginx-proxy/acme-companion](https://github.com/nginx-proxy/acme-companion).
 
 Essentially this is the acme-companion [three container setup](https://github.com/nginx-proxy/acme-companion/wiki/Advanced-usage) ready to use with docker-compose.
